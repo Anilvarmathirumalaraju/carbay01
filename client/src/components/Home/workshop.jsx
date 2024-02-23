@@ -8,6 +8,8 @@ import workshop4 from '../../assets/Images/car-work-4.jpg'
 import workshop5 from '../../assets/Images/car-work-5.jpg'
 import workshop6 from '../../assets/Images/car-work-6.jpg'
 import workshop7 from '../../assets/Images/car-work-7.jpg'
+import workshop8 from '../../assets/Images/car-work-8.jpg'
+import workshop9 from '../../assets/Images/car-work-9.jpg'
 
 const itemData = [
     {
@@ -46,25 +48,25 @@ const itemData = [
       title: 'Basketball',
     },
     {
-      img : workshop3,
+      img : workshop8,
       title: 'Fern',
     },
     {
-      img : workshop4,
+      img : workshop9,
       title: 'Mushrooms',
       rows: 2,
       cols: 2,
     },
     {
-      img : workshop5,
+      img : workshop1,
       title: 'Tomato basil',
     },
     {
-      img : workshop6,
+      img : workshop2,
       title: 'Sea star',
     },
     {
-      img : workshop7,
+      img : workshop3,
       title: 'Bike',
       cols: 2,
     },

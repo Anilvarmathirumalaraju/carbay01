@@ -266,6 +266,7 @@ margin: 1rem;
 }
 .workshop-home{
     margin: 2rem;
+    margin-top: 0rem;
     height: auto;
     /* border: 1px solid black; */
 }

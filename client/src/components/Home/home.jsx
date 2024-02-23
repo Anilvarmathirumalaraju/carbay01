@@ -1,4 +1,5 @@
 import './home.css'
+import { useNavigate } from 'react-router-dom'
 // images
 import mainimg from '../../assets/Images/landing-image.png'
 import whycarbay from './images/whycarbay.png'
@@ -25,65 +26,68 @@ import workshap1 from '../../assets/Images/car-work-2.jpg'
 import Carservice from './carservice'
 import Header from '../../pages/Header/header'
 import Faq from './faq'
+import Howworks from './howworks'
+import Footer from '../../pages/Footer/footer'
 
 const Home =(()=>{
+      const navigate = useNavigate()
     return(
         <>
            <Header/>
-           <div className='home-section'>
-            <div className="home-con">
-                    <div className="home-content">
-                        <p>Where Every Journey Begins: Your Ultimate Car Service Destination!</p>
-                    </div>
-                    <div className="home-image">
-                    <img src={mainimg} alt='main-img'/>
-                    </div>
-            </div> 
-                <div className='home-services'>
-                    <div className='service-head'>
-                        <h1>Car Services for to You</h1>
-                        <p>Your ride's care, our expertise, both tailored true, Car services aplenty, all just for you!</p>
-                    </div>
-                    <div className='service-types-home'>
-                        <div className='service-sub'>
-                              <img src={generalservice} alt=''/>
-                              <p>General service</p>
+                  <div className='home-section'>
+                        <div className="home-con">
+                              <div className="home-content">
+                                    <p>Where Every Journey Begins: Your Ultimate Car Service Destination!</p>
+                              </div>
+                              <div className="home-image">
+                              <img src={mainimg} alt='main-img'/>
+                              </div>
+                        </div> 
+                  <div className='home-services'>
+                        <div className='service-head'>
+                              <h1>Car Services for to You</h1>
+                              <p>Your ride's care, our expertise, both tailored true, Car services aplenty, all just for you!</p>
                         </div>
-                        <div className='service-sub'>
-                              <img src={dentandpaint} alt='Denting and painting'/>
-                              <p>Denting and painting</p>
+                        <div className='service-types-home'>
+                              <div className='service-sub' onClick={()=>{navigate('/services')}}>
+                                    <img src={generalservice} alt=''/>
+                                    <p>General service</p>
+                              </div>
+                              <div className='service-sub' onClick={()=>{navigate('/services')}}>
+                                    <img src={dentandpaint} alt='Denting and painting'/>
+                                    <p>Denting and painting</p>
+                              </div>
+                              <div className='service-sub' onClick={()=>{navigate('/services')}}>
+                                    <img src={acelectrical} alt='Ac and electrical repairs'/>
+                                    <p>Ac and electrical repairs</p>
+                              </div>
+                              <div className='service-sub' onClick={()=>{navigate('/services')}}>
+                                    <img src={ppfceramic} alt='Paint protection film and ceramic coating'/>
+                                    <p>PPF and ceramic coating</p>
+                              </div>
+                              <div className='service-sub' onClick={()=>{navigate('/services')}}>
+                                    <img src={battery} alt='Battery replacement'/>
+                                    <p>Battery replacement</p>
+                              </div>
+                              <div className='service-sub' onClick={()=>{navigate('/services')}}>
+                                    <img src={generalservice} alt='General car health check up/others'/>
+                                    <p>General car health check up/others</p>
+                              </div>
+                              <div className='service-sub' onClick={()=>{navigate('/services')}}>
+                                    <img src={generalservice} alt='Tyres services'/>
+                                    <p>Tyres services</p>
+                              </div>
+                              <div className='service-sub' onClick={()=>{navigate('/services')}}>
+                                    <img src={insurance} alt='Insurance claims'/>
+                                    <p>Insurance claims</p>
+                              </div>
+                              <div className='service-sub' onClick={()=>{navigate('/services')}}>
+                                    <img src={doorstep} alt='Door step servicess'/>
+                                    <p>Door step services</p>
+                              </div>
+                              
                         </div>
-                        <div className='service-sub'>
-                              <img src={acelectrical} alt='Ac and electrical repairs'/>
-                              <p>Ac and electrical repairs</p>
-                        </div>
-                        <div className='service-sub'>
-                              <img src={ppfceramic} alt='Paint protection film and ceramic coating'/>
-                              <p>PPF and ceramic coating</p>
-                        </div>
-                        <div className='service-sub'>
-                              <img src={battery} alt='Battery replacement'/>
-                              <p>Battery replacement</p>
-                        </div>
-                        <div className='service-sub'>
-                              <img src={generalservice} alt='General car health check up/others'/>
-                              <p>General car health check up/others</p>
-                        </div>
-                        <div className='service-sub'>
-                              <img src={generalservice} alt='Tyres services'/>
-                              <p>Tyres services</p>
-                        </div>
-                        <div className='service-sub'>
-                              <img src={insurance} alt='Insurance claims'/>
-                              <p>Insurance claims</p>
-                        </div>
-                        <div className='service-sub'>
-                              <img src={doorstep} alt='Door step servicess'/>
-                              <p>Door step services</p>
-                        </div>
-                          
-                    </div>
-                </div>
+                  </div>
                     {/* why car-bay */}
                     <div className='why-carbay'>
                         <div className='why-carbay-content'>
@@ -98,9 +102,9 @@ const Home =(()=>{
                     {/* how does it works */}
                      <div className='how-it-works'>
                           <div className='how-it-works-head'>
-                            <h1>How does it work ?</h1>
+                            <h1>How CARBAY works ?</h1>
                           </div>
-                          <div className='how-it-works-main'>
+                          {/* <div className='how-it-works-main'>
                               <div className='how-it-works-sub'>
                                     <img src={bookservice} alt=''/>
                                     <p>BOOK SERVICE</p>
@@ -117,6 +121,9 @@ const Home =(()=>{
                                     <img src={freedropoff} alt=''/>
                                     <p>FREE DROP - OFF</p>
                               </div>          
+                          </div> */}
+                          <div>
+                              <Howworks/>
                           </div>
                           
                           
@@ -151,13 +158,13 @@ const Home =(()=>{
                      </div>
 
                      {/* carservice home */}
-                 <div className='home-service-main'>
-                         <Carservice/>
-                 </div>
-                 {/* faq home */}
-                 <div className='faq-home'>
-                        <Faq/>
-                 </div>
+                     <div className='home-service-main'>
+                     <Carservice/>
+                     </div>
+                  {/* faq home */}
+                  <div className='faq-home'>
+                              <Faq/>
+                  </div>
 
                 <div className='workshop-home'>
                    <h1>About our Workshop</h1>
@@ -165,6 +172,7 @@ const Home =(()=>{
                      <Workshop/>
                 </div>
            </div>
+           <Footer/>
             
         </>
     )
