@@ -37,7 +37,7 @@
 }
 /* home services */
 .home-services{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 1.5rem 0rem;
     
 }
@@ -113,7 +113,7 @@
 
 }
 .why-carbay{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 1rem 2rem;
     padding: 1rem 2rem;
     display: grid;
@@ -202,7 +202,7 @@ margin: 1rem;
 /* advantages */
 
 .advantages{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 1rem 1.5rem;
 }
 .advantages-head{
@@ -261,7 +261,7 @@ margin: 1rem;
 }
 /* home service */
 .home-service-main{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 2rem 1.5rem;
 }
 .workshop-home{

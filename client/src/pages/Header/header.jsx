@@ -66,7 +66,7 @@ const Header = () => {
               navigate("/user/dashboard");
             }}
           >
-            <p>Tract&pay</p>
+            <p>Track&pay</p>
           </div>
           <div
             className="nav-sub-section"
