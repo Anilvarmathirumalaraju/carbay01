@@ -1,29 +1,6 @@
-// import React, { useState } from 'react';
+
 import './faq.css'
-// import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-
-// const Faq = () => {
-//   const [expandedIndex, setExpandedIndex] = useState(null);
-
-//   const handleToggle = (index) => {
-//     setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
-//   };
-
-//   return (
-//     <>
-//       <div className='faq-con'>
-//         <h1 className='head-faq'>FAQ (Frequently asked questions)</h1>
-//         {/* Add more FAQ items similarly */}
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Faq;
-
-
 import React, { useState } from 'react';
-import './FAQ.css'; // Import the CSS file for styling
 
 const Faq = () => {
   const faqData = [
