@@ -4,9 +4,12 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Headersub from "../Header/header2";
 import Footer from "../Footer/footer";
+import { SnackbarProvider, useSnackbar } from "notistack";
 
 const Signup = () => {
   const navigate = useNavigate();
+  const { enqueueSnackbar } = useSnackbar();
+
   const [email, setEmail] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
   const [password, setPassword] = useState("");
@@ -55,18 +58,12 @@ const Signup = () => {
           userName,
           password,
         });
-        setAlert({
-          open: true,
-          type: "success",
-          message: "Signup successful!",
-        });
+        enqueueSnackbar("Signin successful!", { variant: "success" });
+
         navigate("/login");
       } catch (error) {
-        setAlert({
-          open: true,
-          type: "error",
-          message: "Error signing up. Please try again later.",
-        });
+        console.log(error);
+        enqueueSnackbar(error?.response?.data.message, { variant: "error" });
       }
     } else {
       setAlert({

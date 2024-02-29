@@ -8,6 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const Headersub = () => {
   const navigate = useNavigate();
+  const user = JSON.parse(localStorage.getItem("user"));
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -19,19 +20,34 @@ const Headersub = () => {
     setIsMenuOpen(false); // Close menu when a menu item is clicked
   };
   const getButton = () => {
-    const user = JSON.parse(localStorage.getItem("user"));
-
     if (user) {
       return (
-        <button
-          onClick={() => {
-            localStorage.removeItem("token");
-            localStorage.removeItem("user");
-            navigate("/");
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+            flexWrap: "wrap",
           }}
         >
-          Log out
-        </button>
+          <button
+            onClick={() => {
+              if ((user.role = "user")) navigate("/user/dashboard");
+              else navigate("/admin/dashboard");
+            }}
+          >
+            My Dashboard
+          </button>
+          <button
+            onClick={() => {
+              localStorage.removeItem("token");
+              localStorage.removeItem("user");
+              navigate("/");
+            }}
+          >
+            Log out
+          </button>
+        </div>
       );
     } else {
       return (
@@ -60,10 +76,11 @@ const Headersub = () => {
           <div
             className="nav-sub-section-2"
             onClick={() => {
-              navigate("/user/dashboard");
+              if (user.role == "user") navigate("/user/dashboard");
+              else navigate("/login");
             }}
           >
-            <p>Track&pay</p>
+            <p>Tract&pay</p>
           </div>
           <div
             className="nav-sub-section-2"
@@ -114,7 +131,14 @@ const Headersub = () => {
         </div>
         <div className={isMenuOpen ? "menu-list" : "menu-list hidden"}>
           <div>
-            <p onClick={handleMenuItemClick}>Track & pay</p>
+            <p
+              onClick={() => {
+                if (user.role == "user") navigate("/user/dashboard");
+                else navigate("/login");
+              }}
+            >
+              Track & pay
+            </p>
           </div>
           <div
             onClick={() => {
@@ -137,13 +161,7 @@ const Headersub = () => {
           >
             <p onClick={handleMenuItemClick}>Insurance</p>
           </div>
-          <div
-            onClick={() => {
-              navigate("/login");
-            }}
-          >
-            <p onClick={handleMenuItemClick}>Login</p>
-          </div>
+          <div className="login-button-2">{getButton()}</div>
         </div>
       </div>
     </>

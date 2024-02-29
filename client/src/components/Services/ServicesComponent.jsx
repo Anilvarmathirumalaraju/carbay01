@@ -173,14 +173,9 @@ function ServicesComponent({
       </Box>
 
       <div className="card">
-        {serviceData.services.map((service) => (
-          <Accordion key={service.id}>
-            <AccordionSummary
-              aria-controls={`panel-${service.id}-content`}
-              id={`panel-${service.id}-header`}
-            >
-              <Typography>{service.title}</Typography>
-            </AccordionSummary>
+        {serviceData.services.map((service, index) => (
+          <div key={index}>
+            <Typography variant="h5">{service.title}</Typography>
             <div className="list-container">
               <Grid container>
                 {service.list.map((data, index) => (
@@ -212,7 +207,7 @@ function ServicesComponent({
                 </div>
               </div>
             </div>
-          </Accordion>
+          </div>
         ))}
       </div>
 
@@ -233,8 +228,6 @@ function ServicesComponent({
             allow="autoplay; encrypted-media"
             allowFullScreen
             className="video"
-            
-
           />
         </Box>
       </div>
@@ -299,7 +292,9 @@ function ServicesComponent({
                 <Typography variant="strong">{faq.question}</Typography>
               </AccordionSummary>
               <div>
-                <Typography>{faq.answer}</Typography>
+                <Typography sx={{ textAlign: "justify", padding: "10px" }}>
+                  {faq.answer}
+                </Typography>
               </div>
             </Accordion>
           ))}

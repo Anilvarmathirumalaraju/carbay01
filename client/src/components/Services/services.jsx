@@ -22,6 +22,7 @@ import { ppfAndCeramicCoatingServiceData } from "./ppf";
 import Headersub from "../../pages/Header/header2";
 import Footer from "../../pages/Footer/footer";
 import axios from "axios";
+import { Button, Typography } from "@mui/material";
 
 const tabComponents = [
   generalServiceData,
@@ -69,14 +70,51 @@ export default function ScrollableTabsButtonAuto() {
   return (
     <>
       <Headersub />
+      {selectedModalData.ismodelSelected ? (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexWrap: "wrap",
+          }}
+        >
+          <Typography>
+            You have Selected &nbsp;&nbsp;
+            <span style={{ color: "blue", fontWeight: "bold" }}>
+              {selectedModalData.company}
+            </span>
+            &nbsp;&nbsp;
+            <span style={{ color: "blue", fontWeight: "bold" }}>
+              {selectedModalData.model}
+            </span>
+            &nbsp;&nbsp;
+            <span style={{ color: "blue", fontWeight: "bold" }}>
+              {selectedModalData.fuel}
+            </span>
+            &nbsp;&nbsp;
+          </Typography>
+          <Button
+            variant="contained"
+            sx={{ backgroundColor: "#1e0c60" }}
+            size="small"
+            onClick={() => setSelectedModalData({ ismodelSelected: false })}
+          >
+            Change Selection
+          </Button>
+        </div>
+      ) : (
+        ""
+      )}
+
       <Box
         sx={{
           width: "95%",
           margin: "2rem",
           bgcolor: "background.paper",
           boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.3)",
-          display:'flex',
-          justifyContent:'space-evenly',
+          display: "flex",
+          justifyContent: "space-evenly",
         }}
       >
         <Tabs
@@ -109,7 +147,7 @@ export default function ScrollableTabsButtonAuto() {
         setUserSelectedData={setUserSelectedData}
         selectedModalData={selectedModalData}
         sx={{
-          width :'100%',
+          width: "100%",
         }}
       />
       <Footer />
