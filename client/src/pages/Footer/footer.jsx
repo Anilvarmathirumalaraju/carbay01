@@ -61,12 +61,17 @@ const Footer = () => {
         </div>
         <div className="footer2">
           <div className="footer2-sub">
-            <div className="logo-title">
-              <div className="footer-logo">
-                <img src={logo} />
+            <div>
+              <div className="logo-title">
+                <div className="footer-logo">
+                  <img src={logo} />
+                </div>
+                {/* <h1>CAR BAY</h1> */}
               </div>
-              <h1>CAR BAY</h1>
+              
+            
             </div>
+           <div>
             <div className="Address">
               <h1>INDIA - HEADQUARTERS</h1>
               <p>
@@ -75,12 +80,13 @@ const Footer = () => {
               </p>
             </div>
             <div className="social-media">
-              <img src={facebook} alt="facebook" />
-              <img src={instagram} alt="instagram" />
-              <img src={linkedin} alt="linkedin" />
-              <img src={twitter} alt="x" />
-              <img src={youtube} alt="youtube" />
-            </div>
+                <img src={facebook} alt="facebook" />
+                <img src={instagram} alt="instagram" />
+                <img src={linkedin} alt="linkedin" />
+                <img src={twitter} alt="x" />
+                <img src={youtube} alt="youtube" />
+              </div>
+              </div>
           </div>
           <div className="footer-sub-details">
             <div>

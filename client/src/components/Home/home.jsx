@@ -28,6 +28,7 @@ import Header from "../../pages/Header/header";
 import Faq from "./faq";
 import Howworks from "./howworks";
 import Footer from "../../pages/Footer/footer";
+import Howcarbayworks from "./howcarbayworks";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -167,7 +168,7 @@ const Home = () => {
         {/* how does it works */}
         <div className="how-it-works">
           <div className="how-it-works-head">
-            {/* <h1>How CARBAY works ?</h1> */}
+            <h1>How CARBAY works ?</h1>
           </div>
           {/* <div className='how-it-works-main'>
                               <div className='how-it-works-sub'>
@@ -188,7 +189,7 @@ const Home = () => {
                               </div>          
                           </div> */}
           <div>
-            <Howworks />
+            <Howcarbayworks />
           </div>
         </div>
         {/* Advantages of carbay */}
