@@ -34,12 +34,13 @@ color: white;
   /* border: 1px solid black; */
   height: 15rem;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
   padding: 1rem 2rem;
   color: #1E0C60;
 }
 .footer2-sub{
-   border: 1px solid black;
+   /* border: 1px solid black; */
    display: grid;
    grid-template-columns: 40% 60%;
    align-items: center;
@@ -72,7 +73,7 @@ color: white;
 }
 .Address h1{
   font-family: Lato;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 800;
   line-height: 40px;
   letter-spacing: 0em;
@@ -100,12 +101,13 @@ color: white;
    cursor: pointer;
 }
 .footer-sub-details{
-  text-align:center;
-  border: 1px solid black;
+  text-align:right;
+  /* border: 1px solid black; */
   padding: 1rem 1rem;
 display: flex;
 flex-direction: column;
 row-gap: 1rem;
+
   
 }
 .footer-sub-details div{
@@ -140,7 +142,7 @@ row-gap: 1rem;
       grid-template-columns: 100%;
   }
   .footer2{
-      border: 1px solid black;
+      /* border: 1px solid black; */
       height: auto;
       display: grid;
       grid-template-columns: 100%;

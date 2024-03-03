@@ -84,7 +84,7 @@ const Header = () => {
               else navigate("/login");
             }}
           >
-            <p>Tract&pay</p>
+            <p>Track&pay</p>
           </div>
           <div
             className="nav-sub-section"

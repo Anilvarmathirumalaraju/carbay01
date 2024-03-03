@@ -29,6 +29,7 @@ import Faq from "./faq";
 import Howworks from "./howworks";
 import Footer from "../../pages/Footer/footer";
 import Howcarbayworks from "./howcarbayworks";
+import Cargurantee from "./car-gurantee";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -224,6 +225,10 @@ const Home = () => {
         {/* carservice home */}
         <div className="home-service-main">
           <Carservice />
+        </div>
+        {/* carbay Guarantee */}
+        <div className="carbay-guarantee-home">
+            <Cargurantee/>
         </div>
         {/* faq home */}
         <div className="faq-home">

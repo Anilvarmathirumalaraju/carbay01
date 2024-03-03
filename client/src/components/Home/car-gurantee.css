@@ -1,0 +1,47 @@
+.car-gurantee-main h2{
+    font-family: Lato;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1E0C60;
+    padding: 1rem ;
+    
+}
+.guarantees{
+    /* border: 1px solid black; */
+    width: 70%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.guarantees div{
+    width: 20rem;
+    height: 2.5rem;
+    text-align: center;
+   /* border: 1px solid black; */
+   padding: 0.4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: Lato;
+   font-size: 20px;
+   font-weight: 800;
+   line-height: 45px;
+   letter-spacing: 0em;
+}
+.g1{
+    background-color: aliceblue;
+}
+.g2{
+    background-color: rgb(178, 210, 238);
+}
+.g3{
+    background-color: rgb(194, 147, 247);
+}
+.g4{
+    background-color: antiquewhite;
+}
