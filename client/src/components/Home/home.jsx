@@ -162,7 +162,7 @@ const Home = () => {
             </p>
           </div>
           <div className="why-carby-image">
-            {/* <h1>Why CARBAY ?</h1> */}
+            <h1>Why CARBAY ?</h1>
             <img src={whycarbay} alt="whycarbay-image" />
           </div>
         </div>
