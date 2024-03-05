@@ -232,11 +232,11 @@ const Insurance = () => {
             </li>
             <li>
               The surveyor will conduct a re-survey after the completion of
-              repair process at the Automovill workshops.
+              repair process at the Carbay workshops.
             </li>
             <li>
               The Delivery Order is issued by the insurance provider after
-              receiving the repairs invoice from the Automovill
+              receiving the repairs invoice from the carbay
             </li>
             <li>
               The CARBAY workshop is allowed to release the repaired vehicle
@@ -302,7 +302,7 @@ const Insurance = () => {
                 NCB discount on your renewal as it can significantly reduce the
                 premium.
                 <br />
-                We at Automovill can get the work done at 60% less than the
+                We at Carbay can get the work done at 60% less than the
                 Authorized Workshop with out Compromising on Quality ( Right
                 from Usage of OEM/OES spare parts to Providing 2 years Warranty
                 of Paint and Free 6 Months warranty on Service)

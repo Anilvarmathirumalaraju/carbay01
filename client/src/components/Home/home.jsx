@@ -2,7 +2,7 @@ import "./home.css";
 import { useNavigate } from "react-router-dom";
 // images
 import mainimg from "../../assets/Images/landing-image.png";
-import whycarbay from "./images/whycarbay.png";
+import whycarbay from "../../assets/Images/car-work-8.jpg";
 import Workshop from "./workshop";
 // service images
 import generalservice from "../../assets/serviceimages/general-service.png";
@@ -162,7 +162,7 @@ const Home = () => {
             </p>
           </div>
           <div className="why-carby-image">
-            <h1>Why CARBAY ?</h1>
+            {/* <h1>Why CARBAY ?</h1> */}
             <img src={whycarbay} alt="whycarbay-image" />
           </div>
         </div>

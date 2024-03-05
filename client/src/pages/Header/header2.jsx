@@ -35,6 +35,7 @@ const Headersub = () => {
               if ((user.role = "user")) navigate("/user/dashboard");
               else navigate("/admin/dashboard");
             }}
+            // style={{ padding: "10px" }}
           >
             My Dashboard
           </button>
@@ -44,6 +45,7 @@ const Headersub = () => {
               localStorage.removeItem("user");
               navigate("/");
             }}
+            // style={{ padding: "10px" }}
           >
             Log out
           </button>

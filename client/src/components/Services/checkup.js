@@ -45,7 +45,7 @@ export const checkupServiceData = {
       url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/others.webp",
     },
   ],
-  videoUrl: "https://www.youtube.com/embed/748R1A46RwU?controls=1",
+  videoUrl: "https://www.youtube.com/embed/v_znaszWjdU",
   servicesDescription: [
     {
       title: {

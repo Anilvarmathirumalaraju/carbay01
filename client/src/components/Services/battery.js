@@ -29,7 +29,7 @@ export const batteryServiceData = {
       url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/accessories.webp",
     },
   ],
-  videoUrl: "https://www.youtube.com/embed/748R1A46RwU?controls=1",
+  videoUrl: "https://www.youtube.com/embed/asK-323nCRM",
   servicesDescription: [
     {
       title: {

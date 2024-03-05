@@ -34,7 +34,7 @@ export const ppfAndCeramicCoatingServiceData = {
       url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/Panel_Painting.webp",
     },
   ],
-  videoUrl: "https://www.youtube.com/embed/748R1A46RwU?controls=1",
+  videoUrl: "https://www.youtube.com/embed/RpZS5Q9Wiqo",
 
   servicesDescription: [
     {

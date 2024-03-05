@@ -62,7 +62,7 @@ export const generalServiceData = {
       url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/Standard_service.webp",
     },
   ],
-  videoUrl: "https://www.youtube.com/embed/748R1A46RwU?controls=1",
+  videoUrl: "https://www.youtube.com/embed/71uaOv8hqvg",
   servicesDescription: [
     {
       title: {
