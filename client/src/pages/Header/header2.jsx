@@ -38,7 +38,7 @@ const Headersub = () => {
           >
             My Dashboard
           </button>
-          {/* <button
+          <button
             onClick={() => {
               localStorage.removeItem("token");
               localStorage.removeItem("user");
@@ -46,7 +46,7 @@ const Headersub = () => {
             }}
           >
             Log out
-          </button> */}
+          </button>
         </div>
       );
     } else {

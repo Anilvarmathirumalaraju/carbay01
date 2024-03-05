@@ -414,7 +414,7 @@ const Insurance = () => {
           </DialogActions>
         </Dialog>
       </div>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 };

@@ -39,7 +39,7 @@ const Header = () => {
           >
             My Dashboard
           </button>
-          {/* <button
+          <button
             onClick={() => {
               localStorage.removeItem("token");
               localStorage.removeItem("user");
@@ -48,7 +48,7 @@ const Header = () => {
             style={{ padding: "10px" }}
           >
             Log out
-          </button> */}
+          </button>
         </div>
       );
     } else {

@@ -23,6 +23,7 @@ import { styled } from "@mui/material/styles";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
+import Faq from "../Home/faq";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -270,14 +271,14 @@ function ServicesComponent({
       ))}
 
       <div>
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
+        {/* <Box sx={{ display: "flex", flexDirection: "column" }}>
           <div className="brand-line mb-1 mt-5 ms-lg-5 ms-sm-2"></div>
           <Typography variant="h5" className="ms-lg-5 ms-sm-2">
             <span className="first">Frequently Asked Questions</span>
             <span className="second"> (FAQs)</span>
           </Typography>
-        </Box>
-        <div
+        </Box> */}
+        {/* <div
           id="accordionExample"
           className="accordion ms-lg-5 ms-sm-2"
           style={{ margin: "1rem" }}
@@ -298,7 +299,8 @@ function ServicesComponent({
               </div>
             </Accordion>
           ))}
-        </div>
+        </div> */}
+        <Faq/>
       </div>
     </div>
   );

@@ -5,8 +5,10 @@ import twitter from "../../assets/Images/twitter.jpeg";
 import youtube from "../../assets/Images/youtube.jpeg";
 import instagram from "../../assets/Images/instagram.jpeg";
 import linkedin from "../../assets/Images/linkedin.jpeg";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate()
   return (
     <>
       <div className="footer-con">
@@ -23,40 +25,40 @@ const Footer = () => {
           </div>
           <div className="footer-sub">
             <h1>OUR SERVICES</h1>
-            <p>General service</p>
-            <p>Denting & painting</p>
-            <p>AC & Electrical repairs</p>
-            <p>General health checkup</p>
-            <p>Battery & Tyre service</p>
-            <p>Door step service</p>
-            <p>PPF & Ceramic service</p>
+            <p onClick={()=>{navigate('/services')}}>General service</p>
+            <p onClick={()=>{navigate('/services')}}>Denting & painting</p>
+            <p onClick={()=>{navigate('/services')}}>AC & Electrical repairs</p>
+            <p onClick={()=>{navigate('/services')}}>General health checkup</p>
+            <p onClick={()=>{navigate('/services')}}>Battery & Tyre service</p>
+            <p onClick={()=>{navigate('/services')}}>Door step service</p>
+            <p onClick={()=>{navigate('/services')}}>PPF & Ceramic service</p>
           </div>
           <div className="footer-sub">
             <h1>LUXARY BRANDS</h1>
-            <p>Jaguar</p>
-            <p>Porsche</p>
-            <p>Rolls Royce</p>
-            <p>Ferrari</p>
-            <p>Land Rover</p>
-            <p>Mercedes</p>
-            <p>BMW</p>
-            <p>Audi</p>
-            <p>Volvo</p>
-            <p>Mitsubishi</p>
+            <p onClick={()=>{navigate('/services')}}>Jaguar</p>
+            <p onClick={()=>{navigate('/services')}}>Porsche</p>
+            <p onClick={()=>{navigate('/services')}}>Rolls Royce</p>
+            <p onClick={()=>{navigate('/services')}}>Ferrari</p>
+            <p onClick={()=>{navigate('/services')}}>Land Rover</p>
+            <p onClick={()=>{navigate('/services')}}>Mercedes</p>
+            <p onClick={()=>{navigate('/services')}}>BMW</p>
+            <p onClick={()=>{navigate('/services')}}>Audi</p>
+            <p onClick={()=>{navigate('/services')}}>Volvo</p>
+            <p onClick={()=>{navigate('/services')}}>Mitsubishi</p>
           </div>
           <div className="footer-sub">
-            <h1>POPULAR BRANDS</h1>
-            <p>Mahindra</p>
-            <p>Renault</p>
-            <p>Fiat</p>
-            <p>Kia</p>
-            <p>Skoda</p>
-            <p>volkswagen</p>
-            <p>Maruthi suziki</p>
-            <p>Tata</p>
-            <p>Tayota</p>
-            <p>Hyundai</p>
-            <p>Honda</p>
+            <h1 onClick={()=>{navigate('/services')}}>POPULAR BRANDS</h1>
+            <p onClick={()=>{navigate('/services')}}>Mahindra</p>
+            <p onClick={()=>{navigate('/services')}}>Renault</p>
+            <p onClick={()=>{navigate('/services')}}>Fiat</p>
+            <p onClick={()=>{navigate('/services')}}>Kia</p>
+            <p onClick={()=>{navigate('/services')}}>Skoda</p>
+            <p onClick={()=>{navigate('/services')}}>volkswagen</p>
+            <p onClick={()=>{navigate('/services')}}>Maruthi suziki</p>
+            <p onClick={()=>{navigate('/services')}}>Tata</p>
+            <p onClick={()=>{navigate('/services')}}>Tayota</p>
+            <p onClick={()=>{navigate('/services')}}>Hyundai</p>
+            <p onClick={()=>{navigate('/services')}}>Honda</p>
           </div>
         </div>
         <div className="footer2">
@@ -80,9 +82,10 @@ const Footer = () => {
               </p>
             </div>
             <div className="social-media">
-                <img src={facebook} alt="facebook" />
+                
                 <img src={instagram} alt="instagram" />
                 <img src={linkedin} alt="linkedin" />
+                <img className="facebook" src={facebook} alt="facebook" />
                 <img src={twitter} alt="x" />
                 <img src={youtube} alt="youtube" />
               </div>

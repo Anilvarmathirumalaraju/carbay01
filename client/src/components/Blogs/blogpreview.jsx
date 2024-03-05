@@ -9,6 +9,12 @@ const Blogpreview = () => {
     const location = useLocation();
     const selectedblogdata = location.state ? location.state.selectedblog : null;
     const descPoints = selectedblogdata.desc.split('\n');
+    const blogkeywords = selectedblogdata.keywords
+    console.log(blogkeywords)
+
+    const searchOnGoogle = (query) => {
+      window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, '_blank');
+    };
   return (
    <>
      <Headersub/>
@@ -26,6 +32,20 @@ const Blogpreview = () => {
                         <p key={index}>{point}</p>
                     ))}
         </div>
+        <p>
+        Keywords:{' '}
+        {blogkeywords.map((keyword, index) => (
+          <React.Fragment key={index}>
+            {index > 0 && ', '}
+            <span
+              style={{ cursor: 'pointer' ,color:'blue' }}
+              onClick={() => searchOnGoogle(keyword)}
+            >
+              {keyword}
+            </span>
+            </React.Fragment>
+          ))}
+        </p>
         
      </div>
    </>

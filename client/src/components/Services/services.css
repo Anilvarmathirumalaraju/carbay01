@@ -16,6 +16,9 @@
 .list-container {
   display: flex;
   margin-top: 1rem;
+ border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .card {
   width: 95%;
@@ -47,12 +50,21 @@
   display: flex;
   margin-right: 8px;
 }
-
+.car-logo-images:hover{
+    cursor: pointer;
+}
 .cardimage{
   /* border: 1px solid black; */
   /* display: flex;
   justify-content: center;
   align-items: center; */
+}
+.car-model-img{
+  width: 5rem;
+  height: 5rem;
+}
+.car-model-img:hover{
+  cursor: pointer;
 }
 .video{
   margin: 1rem auto;

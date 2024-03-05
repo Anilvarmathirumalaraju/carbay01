@@ -11,12 +11,12 @@
     font-weight: 800;
     line-height: 29px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     margin: 1rem 3rem;
 }
 .blogimage{
-    width: 80%;
-    height: 25rem;
+    width: 50%;
+    height: 20rem;
     /* border: 1px solid black; */
     border-radius: 15px;
     margin-left: auto;

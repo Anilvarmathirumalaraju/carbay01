@@ -241,7 +241,7 @@ export default function DialogBox({ setUserSelectedData }) {
                   {selectedData.car.isOpen &&
                     CompanyImages.map((data, index) => (
                       <Grid item xs={6} sm={4} md={3} key={index}>
-                        <img
+                        <img className="car-logo-images"
                           onClick={() => {
                             handleSelectedCarModals(data);
                           }}
@@ -281,6 +281,7 @@ export default function DialogBox({ setUserSelectedData }) {
                           key={index}
                         >
                           <img
+                          className="car-model-img"
                             onClick={() => {
                               onClickFunction({
                                 model: {
@@ -296,9 +297,9 @@ export default function DialogBox({ setUserSelectedData }) {
                             src={data.img}
                             alt={`Image ${index + 1}`}
                             style={{
-                              width: "100%",
-                              height: "100%",
-                              objectFit: "cover",
+                              // width: "100%",
+                              // height: "100%",
+                              // objectFit: "cover",
                             }}
                           />
 
