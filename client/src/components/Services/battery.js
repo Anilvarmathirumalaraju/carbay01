@@ -1,3 +1,7 @@
+import Standard from '../../assets/serviceimages/standard.jpeg'
+import comprehensive from '../../assets/serviceimages/comprehensive.jpeg'
+
+
 export const batteryServiceData = {
   id: "battery",
   title: {
@@ -14,7 +18,7 @@ export const batteryServiceData = {
       id: "batteryReplacement",
       title: "Battery Replacement",
       list: ["Battery Replacement", "Tyre Replacement"],
-      url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/Battery_replacement.webp",
+      url: Standard,
     },
     {
       id: "jumpStart",
@@ -26,7 +30,7 @@ export const batteryServiceData = {
         "Floor Mats",
         "Infotainment System",
       ],
-      url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/accessories.webp",
+      url: comprehensive,
     },
   ],
   videoUrl: "https://www.youtube.com/embed/asK-323nCRM",

@@ -1,3 +1,7 @@
+import Standard from '../../assets/serviceimages/standard.jpeg'
+import comprehensive from '../../assets/serviceimages/comprehensive.jpeg'
+
+
 export const dentingServiceData = {
   id: "painting",
   title: {
@@ -18,7 +22,7 @@ export const dentingServiceData = {
         "Painting as per the Standard Code",
         "Multi-Layer Coating",
       ],
-      url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/Panel_Painting.webp",
+      url: Standard,
     },
     {
       id: "fullBody",
@@ -33,7 +37,7 @@ export const dentingServiceData = {
         "Interior Floor & Door Hinges Painting(conditional)**",
         "Dickey Floor & Dickey door inside Painting",
       ],
-      url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/Body-painting.webp",
+      url: comprehensive,
     },
     {
       id: "alloy",

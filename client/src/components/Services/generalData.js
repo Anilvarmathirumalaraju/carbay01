@@ -1,3 +1,6 @@
+import Standard from '../../assets/serviceimages/standard.jpeg'
+import comprehensive from '../../assets/serviceimages/comprehensive.jpeg'
+
 export const generalServiceData = {
   id: "general",
   title: {
@@ -33,7 +36,7 @@ export const generalServiceData = {
         "Complete Electrical Check up",
         "All Labour Included",
       ],
-      url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/Standard_service.webp",
+      url: Standard,
     },
     {
       id: "comprehensive",
@@ -59,7 +62,7 @@ export const generalServiceData = {
         "Tyre Rotation",
         "All Labour Included",
       ],
-      url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/Standard_service.webp",
+      url: comprehensive,
     },
   ],
   videoUrl: "https://www.youtube.com/embed/71uaOv8hqvg",

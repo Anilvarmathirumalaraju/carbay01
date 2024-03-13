@@ -71,6 +71,7 @@ export default function ScrollableTabsButtonAuto() {
     <>
       <Headersub />
       {selectedModalData.ismodelSelected ? (
+        // search bar
         <div
           style={{
             display: "flex",

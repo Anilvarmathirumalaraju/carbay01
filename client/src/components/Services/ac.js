@@ -1,3 +1,7 @@
+import Standard from '../../assets/serviceimages/standard.jpeg'
+import comprehensive from '../../assets/serviceimages/comprehensive.jpeg'
+
+
 export const acServiceData = {
   title: {
     first: "Best Car AC Services and Repair",
@@ -18,7 +22,7 @@ export const acServiceData = {
         "Compressor Oil",
         "Leakage Check",
       ],
-      url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/ac-service.webp",
+      url: Standard,
     },
     {
       title: "Electrical Repair",
@@ -29,7 +33,7 @@ export const acServiceData = {
         "Tail Light Issue",
         "Warning Light Issue",
       ],
-      url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/electrical_repair.webp",
+      url: comprehensive,
     },
   ],
   videoUrl: "https://www.youtube.com/embed/748R1A46RwU?controls=1",

@@ -1,3 +1,7 @@
+import Standard from '../../assets/serviceimages/standard.jpeg'
+import comprehensive from '../../assets/serviceimages/comprehensive.jpeg'
+
+
 export const ppfAndCeramicCoatingServiceData = {
   id: "ppf",
   title: {
@@ -19,7 +23,7 @@ export const ppfAndCeramicCoatingServiceData = {
         "UV Resistance",
         "Easy Maintenance",
       ],
-      url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/Panel_Painting.webp",
+      url: Standard,
     },
     {
       id: "ceramic",
@@ -31,7 +35,7 @@ export const ppfAndCeramicCoatingServiceData = {
         "UV Protection",
         "Easy Cleaning",
       ],
-      url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/Panel_Painting.webp",
+      url: comprehensive,
     },
   ],
   videoUrl: "https://www.youtube.com/embed/RpZS5Q9Wiqo",

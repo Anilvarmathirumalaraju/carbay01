@@ -15,8 +15,8 @@ color: #1E0C60;
     padding: 2rem 0rem;
 }
 .cartypes img{
-    width: 100%;
-    height: 100%;
+    width: 10rem;
+    height: 10rem;
 }
 .cartypes img:hover{
     cursor: pointer;

@@ -20,7 +20,7 @@ const Carservice = () => {
           <img src={tata} alt="hyundai" />
           <img src={maruthisuziki} alt="hyundai" />
           <img src={benz} alt="hyundai" />
-          {/* <img src={ford} alt='hyundai'/> */}
+          <img src={ford} alt='hyundai'/>
         </div>
         <div className="more-cartypes">
           <button>More Car brands</button>

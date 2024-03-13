@@ -1,3 +1,6 @@
+import Standard from '../../assets/serviceimages/standard.jpeg'
+import comprehensive from '../../assets/serviceimages/comprehensive.jpeg'
+
 export const checkupServiceData = {
   id: "checkup",
   title: {
@@ -27,7 +30,7 @@ export const checkupServiceData = {
         "Horn - Check",
         "Tyre Air Pressure - Check",
       ],
-      url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/gen-health-checkup.webp",
+      url: Standard,
     },
     {
       id: "otherServices",
@@ -42,7 +45,7 @@ export const checkupServiceData = {
         "Leakage Issue",
         "Rat-bite Damage Issue",
       ],
-      url: "https://s3.ap-south-1.amazonaws.com/prodimages.automovill.com/services/others.webp",
+      url: comprehensive,
     },
   ],
   videoUrl: "https://www.youtube.com/embed/v_znaszWjdU",

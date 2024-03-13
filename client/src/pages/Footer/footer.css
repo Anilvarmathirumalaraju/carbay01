@@ -160,7 +160,8 @@ row-gap: 1rem;
       color: #1E0C60;
   }
   .footer2-sub{
-     
+     display: flex;
+     flex-direction: column;
   }
   .logo-title{
       display: flex;

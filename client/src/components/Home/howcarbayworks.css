@@ -1,5 +1,5 @@
 .how-carbay-works-main{
-    width: 70%;
+    width: 75%;
     margin: 2rem auto;
     padding: 1rem ;
     /* border: 1px solid black; */
@@ -8,10 +8,11 @@
     row-gap: 1rem;
 }
 .step1{
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    /* border: 1px solid black; */
     justify-content: space-between;
     align-items: center;
-
 }
 .no-box{
     width: 3rem;
@@ -44,5 +45,71 @@
     line-height: 35px;
     letter-spacing: 0em;
     text-align: left;
+    padding-left: 2rem;
    
+}
+.how-img-con{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 600px){
+
+    .how-carbay-works-main{
+        width: 100%;
+        margin: 0.5rem auto;
+        padding: 0.5rem ;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .step1{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        /* border: 1px solid black; */
+        justify-content: space-between;
+        align-items: center;
+    }
+    .no-box{
+        width: 3rem;
+        height: 3rem;
+        background-color: rgb(216, 213, 213);
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 48px;
+        letter-spacing: 0em;
+        color: #1E0C60;
+    }
+    .how-text h1{
+        font-family: Lato;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+       
+    }
+    .how-text p{
+        font-family: Lato;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;   
+    }
+    .how-img-con img{
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        justify-content: right;
+        align-items: right;
+    }
 }
