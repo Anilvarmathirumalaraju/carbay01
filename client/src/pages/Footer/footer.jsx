@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
           <div className="footer-sub">
             <h1>OUR SERVICES</h1>
-            <p onClick={()=>{navigate('/services')}}>General service</p>
+            <p onClick={()=>navigate('/services')}>General service</p>
             <p onClick={()=>{navigate('/services')}}>Denting & painting</p>
             <p onClick={()=>{navigate('/services')}}>AC & Electrical repairs</p>
             <p onClick={()=>{navigate('/services')}}>General health checkup</p>
